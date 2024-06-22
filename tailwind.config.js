@@ -11,6 +11,12 @@ module.exports = {
     "./node_modules/@medusajs/ui/dist/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    container:{
+      center:true,
+      screens:{
+        'xl': '1440px',
+      },
+    },
     extend: {
       transitionProperty: {
         width: "width margin",
