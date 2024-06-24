@@ -1,6 +1,6 @@
 import { Text, clx } from "@medusajs/ui"
 import * as AccordionPrimitive from "@radix-ui/react-accordion"
-
+import {Header} from "@radix-ui/react-accordion"
 import React from "react"
 
 type AccordionItemProps = AccordionPrimitive.AccordionItemProps & {
@@ -17,7 +17,6 @@ type AccordionItemProps = AccordionPrimitive.AccordionItemProps & {
   triggerable?: boolean
   children: React.ReactNode
 }
-const Header = AccordionPrimitive.Header;
 type AccordionProps =
   | (AccordionPrimitive.AccordionSingleProps &
       React.RefAttributes<HTMLDivElement>)
