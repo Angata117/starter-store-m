@@ -1,6 +1,6 @@
 import { Text, clx } from "@medusajs/ui"
 import * as AccordionPrimitive from "@radix-ui/react-accordion"
-import {Header} from "@radix-ui/react-accordion"
+
 import React from "react"
 
 type AccordionItemProps = AccordionPrimitive.AccordionItemProps & {
@@ -17,6 +17,7 @@ type AccordionItemProps = AccordionPrimitive.AccordionItemProps & {
   triggerable?: boolean
   children: React.ReactNode
 }
+
 type AccordionProps =
   | (AccordionPrimitive.AccordionSingleProps &
       React.RefAttributes<HTMLDivElement>)
@@ -55,7 +56,7 @@ const Item: React.FC<AccordionItemProps> = ({
       )}
     >
     
-      <Header className="px-1">
+      <AccordionPrimitive.Header className="px-1">
         <div className="flex flex-col">
           <div className="flex w-full items-center justify-between">
             <div className="flex items-center gap-4">
@@ -72,7 +73,7 @@ const Item: React.FC<AccordionItemProps> = ({
             </Text>
           )}
         </div>
-      </Header>
+      </AccordionPrimitive.Header>
      
       <AccordionPrimitive.Content
         forceMount={forceMountContent}
