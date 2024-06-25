@@ -57,7 +57,7 @@ const CountrySelect = ({ toggleState, regions }: CountrySelectProps) => {
     <div>
       <Listbox
         as="span"
-        onChange={(value)=>handleChange(value as CountryOption)}
+        onChange={(value : any)=>handleChange(value as CountryOption)}
         defaultValue={
           countryCode
             ? options?.find((o) => o.country === countryCode)
